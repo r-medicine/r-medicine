@@ -255,10 +255,7 @@ aside:after,
 figure:after,
 div:after,
 ol:after,
-li{
-  font-size: 14px;
-  margin-bottom: 1.0em;
-  :after;}
+li:after,
 form:after,
 ul:after,
 dl:after {
@@ -307,7 +304,7 @@ h4 {
   font-size: 3em;
 }
 p {
-  font-size: 14px;
+  font-size: 1.6em;
   line-height: 1.6em;
   margin-bottom: 1.4em;
 }
@@ -330,7 +327,7 @@ nav {
   margin-right: 15px;
 }
 .nav-link {
-  font-size: 24px;
+  font-size: 1.4em;
 }
 /* =============================================================================
    HEADER

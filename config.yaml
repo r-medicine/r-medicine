@@ -1,4 +1,4 @@
-baseurl: "https://example.org/"
+baseurl: "https://localhost"
 title: "Conference name"
 canonifyurls: true
 theme: "hugo-conference"
