@@ -255,7 +255,11 @@ aside:after,
 figure:after,
 div:after,
 ol:after,
-li:after,
+li{ 
+  font-size: 14px; 
+  margin-bottom: 1.0em; 
+  :after;
+} 
 form:after,
 ul:after,
 dl:after {
@@ -323,11 +327,12 @@ nav {
   z-index: 10;
 }
 .nav-item {
+  font-size:24;
   display: inline-block;
   margin-right: 15px;
 }
 .nav-link {
-  font-size: 1.4em;
+  font-size: 30px;
 }
 /* =============================================================================
    HEADER
