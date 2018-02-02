@@ -1,5 +1,5 @@
 baseurl: "https://localhost"
-title: "Conference name"
+title: "R/Medicine"
 canonifyurls: true
 theme: "hugo-conference"
 
@@ -7,14 +7,15 @@ GoogleAnalytics: "UA-9232216-1"
 
 params:
   # Conference info
-  Name: "Conference name"
-  Description: "Conference description"
-  Date: "November 15"
-  Price: "Only $100" # If your event is free, just comment this line
-  Venue: "Coco Bongo"
-  Address: "Boulevard Kukulcan, 30"
-  City:  "Cancún"
-  State: "Quintana"
+  Name: "R/Medicine 2018"
+  Description: "R/Medicine 2018"
+  Date: "September 7-8"
+  #Price: "Only $100" # If your event is free, just comment this line
+  Venue: "The Omni Hotel"
+  Organizers: "Brought to you by the R Consortium and the Yale Biostatistics Department"
+  Address: "155 Temple Street"
+  City:  "New Haven"
+  State: "CT"
   Images: ["/img/badge.jpg"]
 
   # Active sections on the website to deactivate comment out with '#'
@@ -22,8 +23,8 @@ params:
   Sections:
     - about
     - location
-    - schedule
-    - sponsors
+    #- schedule
+    #- sponsors
     - committee
     #- contact
 
@@ -31,16 +32,16 @@ params:
   Titles:
     about: "About"
     location: "Location"
-    schedule: "Schedule"
-    sponsors: "Sponsors"
+    #schedule: "Schedule"
+    #sponsors: "Sponsors"
     committee: "Committee"
     #contact: "Contact"
 
   # The Call To Action button at the header,
   # If you don't want this, just remove the callToAction property.
-  CallToAction:
-    text: "Register now!"
-    link: "http://register.example.com"
+#  CallToAction:
+#    text: "Register now!"
+#    link: "http://register.example.com"
 
   # Fork me on GitHub, if you don't want this, just remove the forkButton property
 #  ForkButton:
