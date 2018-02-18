@@ -7,14 +7,14 @@ GoogleAnalytics: "UA-9232216-1"
 
 params:
   # Conference info
-  Name: "Conference name"
+  Name: "R Medicine 2018"
   Description: "Conference description"
-  Date: "November 15"
+  Date: "September 7-8"
   Price: "Only $100" # If your event is free, just comment this line
-  Venue: "Coco Bongo"
-  Address: "Boulevard Kukulcan, 30"
-  City:  "Cancún"
-  State: "Quintana"
+  #Venue: "Coco Bongo"
+  Address: "New Haven, CT"
+  City:  "New Haven"
+  State: "CT"
   Images: ["/img/badge.jpg"]
 
   # Active sections on the website to deactivate comment out with '#'
@@ -25,7 +25,7 @@ params:
     - schedule
     - sponsors
     - committee
-    #- contact
+    - contact
 
   # Titles which you can translate to other languages
   Titles:
