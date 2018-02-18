@@ -1,0 +1,113 @@
+library(googleAuthR)
+library(googleAnalyticsR)
+library(searchConsoleR)
+# start with google analytics auth
+gar_auth("ga.httr-oauth")
+
+# can run Google Analytics API calls:
+ga_account_list()
+
+# switch to Seach Console auth
+gar_auth("sc.httr-oauth")
+
+# can now run Search Console API calls:
+list_websites()
+
+<html>
+
+<head>
+<style type="text/css">
+.knitr .inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+}
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.rimage .left {
+  text-align: left;
+}
+.rimage .right {
+  text-align: right;
+}
+.rimage .center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.str {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.std {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style>
+<title>Site Location</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    #map{
+      height: 500px;
+      width:100%;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="map"></div>
+
+  function initMap(){
+    var location = {lat: 41.308274, lng: -72.927884};
+    var map = new google.maps.Map(document.getElementById("map"), {
+    zoom:4,
+    center:location
+    })
+    var marker= new google.maps.Marker({
+      position: location,
+      map: map
+    })
+  };
+</script>
+
+<script async defer src-"https://maps.googleapis.com/maps/api/js?key=AIzaSyAmrv_KZD1ugpu4AFvKVK7YQHgtvqPjkMI&callback=initMap"</script>
+</body>
+</html>
