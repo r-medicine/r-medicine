@@ -26,7 +26,7 @@ params:
     #- schedule
     #- sponsors
     - committee
-    #- contact
+    - contact
 
   # Titles which you can translate to other languages
   Titles:
@@ -35,7 +35,7 @@ params:
     #schedule: "Schedule"
     #sponsors: "Sponsors"
     committee: "Committee"
-    #contact: "Contact"
+    contact: "Contact"
 
   # The Call To Action button at the header,
   # If you don't want this, just remove the callToAction property.
