@@ -23,17 +23,19 @@ params:
   Sections:
     - about
     - location
+    - lodging
     #- schedule
-    #- sponsors
+    - sponsors
     - committee
     - contact
 
   # Titles which you can translate to other languages
   Titles:
     about: "About"
+    lodging: "Lodging"
     location: "Location"
     #schedule: "Schedule"
-    #sponsors: "Sponsors"
+    sponsors: "Sponsors"
     committee: "Committee"
     contact: "Contact"
 
