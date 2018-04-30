@@ -10,7 +10,7 @@ params:
   Name: "R Medicine 2018"
   Description: "Conference description"
   Date: "September 7-8"
-  Price: "Only $100" # If your event is free, just comment this line
+ # Price: "Only $100" # If your event is free, just comment this line
   #Venue: "Coco Bongo"
   Address: "New Haven, CT"
   City:  "New Haven"
@@ -23,7 +23,7 @@ params:
     - about
     - lodging
     - location
-    - schedule
+    #- schedule
     - sponsors
     - committee
     - contact
@@ -33,7 +33,7 @@ params:
     about: "About"
     lodging: "Lodging"
     location: "Location"
-    schedule: "Schedule"
+    #schedule: "Schedule"
     sponsors: "Sponsors"
     committee: "Committee"
     contact: "Contact"
