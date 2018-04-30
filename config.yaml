@@ -1,4 +1,4 @@
-baseurl: "https://localhost"
+baseurl: "http://r-medicine.com"
 title: "Conference name"
 canonifyurls: true
 theme: "hugo-conference"
