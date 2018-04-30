@@ -3,7 +3,7 @@ title: "R/Medicine"
 canonifyurls: true
 theme: "hugo-conference"
 
-GoogleAnalytics: "AIzaSyDydkNxS865TRLXQrutUYJyjh9MBfIYIAI"
+GoogleAnalytics: "UA-9232216-1"
 
 params:
   # Conference info
