@@ -1,0 +1,9 @@
+name = "R Conference"
+license = "MIT"
+tags = ["conference", "responsive", "l10n", "google-analytics"]
+features = ["conference", "responsive", "l10n", "google-analytics"]
+min_version = "0.21"
+
+[author]
+  name = "Michael Kane"
+
