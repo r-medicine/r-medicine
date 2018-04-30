@@ -12,7 +12,7 @@ params:
   Date: "September 7-8"
   #Price: "Only $100" # If your event is free, just comment this line
   Venue: "The Omni Hotel"
-  Organizers: "Brought to you by the R Consortium and the Yale Biostatistics Department"
+  Organizers: "Brought to you by the Yale School of Public Health Biostatistics Department and the R Consortium"
   Address: "155 Temple Street"
   City:  "New Haven"
   State: "CT"
@@ -41,9 +41,10 @@ params:
 
   # The Call To Action button at the header,
   # If you don't want this, just remove the callToAction property.
-#  CallToAction:
-#    text: "Register now!"
-#    link: "http://register.example.com"
+  CallToAction:
+    text: "Register now!"
+    link: http://www.cvent.com/d/1gq0qx
+ 
 
   # Fork me on GitHub, if you don't want this, just remove the forkButton property
 #  ForkButton:

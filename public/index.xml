@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/markedmap/</guid>
-      <description>library(googleAuthR)library(googleAnalyticsR)library(searchConsoleR)# start with google analytics authgar_auth(&#34;ga.httr-oauth&#34;)# can run Google Analytics API calls:ga_account_list()# switch to Seach Console authgar_auth(&#34;sc.httr-oauth&#34;)# can now run Search Console API calls:list_websites().knitr .inline {background-color: #f7f7f7;border:solid 1px #B0B0B0;}.error {font-weight: bold;color: #FF0000;}.warning {font-weight: bold;}.message {font-style: italic;}.source, .output, .warning, .error, .message {padding: 0 1em;border:solid 1px #F7F7F7;}.</description>
+      <description>library(googleAuthR) library(googleAnalyticsR) library(searchConsoleR) # start with google analytics auth gar_auth(&#34;ga.httr-oauth&#34;) # can run Google Analytics API calls: ga_account_list() # switch to Seach Console auth gar_auth(&#34;sc.httr-oauth&#34;) # can now run Search Console API calls: list_websites()   .knitr .inline { background-color: #f7f7f7; border:solid 1px #B0B0B0; } .error { font-weight: bold; color: #FF0000; } .warning { font-weight: bold; } .message { font-style: italic; } .source, .output, .warning, .error, .message { padding: 0 1em; border:solid 1px #F7F7F7; } .</description>
     </item>
     
   </channel>
