@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Conference name</title>
-    <link>https://localhost/</link>
-    <description>Recent content on Conference name</description>
+    <title>R/Medicine</title>
+    <link>/</link>
+    <description>Recent content on R/Medicine</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://localhost/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://localhost/markedmap/</link>
+      <link>/markedmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost/markedmap/</guid>
+      <guid>/markedmap/</guid>
       <description>library(googleAuthR) library(googleAnalyticsR) library(searchConsoleR) # start with google analytics auth gar_auth(&#34;ga.httr-oauth&#34;) # can run Google Analytics API calls: ga_account_list() # switch to Seach Console auth gar_auth(&#34;sc.httr-oauth&#34;) # can now run Search Console API calls: list_websites()   .knitr .inline { background-color: #f7f7f7; border:solid 1px #B0B0B0; } .error { font-weight: bold; color: #FF0000; } .warning { font-weight: bold; } .message { font-style: italic; } .source, .output, .warning, .error, .message { padding: 0 1em; border:solid 1px #F7F7F7; } .</description>
     </item>
     
