@@ -1,0 +1,26 @@
+<h2 class="section-title">{{ .titles.keynotes}}</h2>
+
+<ul class="keynotes-list">
+    <h3 class="speakers-name">
+      <a href="https://statweb.stanford.edu/~tibs/" target="_blank">Robert Tibshirani</a> , Profesor of Biomedical Data Science, and Statistics at Stanford University
+    </h3>
+    <h3 class="speakers-name">
+      <a href="https://ischool.illinois.edu/people/faculty/vcs" target="_blank">Victoria Stodden</a> (<a href="https://twitter.com/victoriastodden" target="_blank">@victoriastodden</a>), Associate Professor of Information Sciences at the University of Illinois at Urbana-Champaign
+    </h3>
+    <h3 class="speakers-name">
+      <a href="https://www.linkedin.com/in/michael-lawrence-74a9b482" target="_blank">Michael Lawrence</a> (<a href="https://twitter.com/lawremi" target="_blank">@lawremi</a>), Core Member of R and Bioconductor and Computational Biologist at Genentech
+    </h3>
+  </li>
+
+{{ range $speaker := .keynotes }}
+  <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+
+    <h3 class="keynotes-name">{{ .name }}
+      {{ with .link }}
+      <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a>
+      {{ end }}
+    </h3>
+    <p class="speakers-bio">{{ .bio }}</p>
+  </li>
+{{ end }}
+</ul>

@@ -22,9 +22,10 @@ params:
   # you can also change order here and it will reflect on page
   Sections:
     - about
+    - keynotes
     - location
     - lodging
-    #- schedule
+#    - schedule
     - sponsors
     - committee
     - contact
@@ -32,18 +33,19 @@ params:
   # Titles which you can translate to other languages
   Titles:
     about: "About"
+    keynotes: "Keynotes"
     lodging: "Lodging"
     location: "Location"
-    #schedule: "Schedule"
+#    schedule: "Schedule"
     sponsors: "Sponsors"
     committee: "Committee"
     contact: "Contact"
 
   # The Call To Action button at the header,
   # If you don't want this, just remove the callToAction property.
-  CallToAction1:
-    text: "Submit an Abstract"
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSeJyzhA3N01Kj6bgdBz6pyjG7ztDR-iO8JFZhwm_Pf8mhYnhQ/viewform"
+#  CallToAction1:
+#    text: "Submit an Abstract"
+#    link: "https://docs.google.com/forms/d/e/1FAIpQLSeJyzhA3N01Kj6bgdBz6pyjG7ztDR-iO8JFZhwm_Pf8mhYnhQ/viewform"
  
   CallToAction:
     text: "Register"
@@ -69,22 +71,38 @@ params:
 #      logo: "/img/partner.png"
 #      url: "http://braziljs.org"
 #
-#  # The entire schedule
-#  Schedule:
-#    - name: "Check-in / Breakfast"
-#      time: "9h00"
-#
-#    - name: "Linus Torvalds"
-#      photo: "/img/speaker.jpg"
-#      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-#      company: "Linux Foundation"
-#      link:
-#        href: "http://twitter.com/linus"
-#        text: "@linus"
-#      presentation:
-#        title: "Digging into a Linux Kernel"
-#        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-#        time: "10h00"
+
+Keynotes:
+    name: "Robert Tibshirani"
+    link:
+        href: "https://statweb.stanford.edu/~tibs/"
+
+    name: "Victoria Stodden"
+    link: 
+        href: "https://ischool.illinois.edu/people/faculty/vcs"
+        text: "@victoriastodden"
+
+    name: "Michael Lawrence"
+    link:
+        href: "https://www.linkedin.com/in/michael-lawrence-74a9b482"
+        text: "@lawremi"
+
+  # The entire schedule
+Schedule:
+    - name: "Check-in / Breakfast"
+      time: "9h00"
+
+    - name: "Linus Torvalds"
+      photo: "/img/speaker.jpg"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "Linux Foundation"
+      link:
+        href: "http://twitter.com/linus"
+        text: "@linus"
+      presentation:
+        title: "Digging into a Linux Kernel"
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        time: "10h00"
 #
 #    - name: "Bill Gates"
 #      photo: "/img/speaker.jpg"
