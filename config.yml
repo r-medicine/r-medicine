@@ -48,7 +48,7 @@ params:
 #    link: "https://docs.google.com/forms/d/e/1FAIpQLSeJyzhA3N01Kj6bgdBz6pyjG7ztDR-iO8JFZhwm_Pf8mhYnhQ/viewform"
  
   CallToAction:
-    text: "Register"
+    text: "Click Here to Register"
     link: http://www.cvent.com/d/1gq0qx
  
 
