@@ -1,45 +1,276 @@
+
 <h2 class="section-title">{{ .titles.schedule }}</h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-<div class="schedule-tbl">
-  <table>
-    <thead>
-      <tr>
-        <th class="schedule-time">Time</th>
-        <th class="schedule-slot">Slot</th>
-        <th class="schedule-description">Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{ range $slot := .schedule }}
-        {{ if ne .presentation nil }}
-          <tr>
-            <td class="schedule-time">{{ .presentation.time }}</td>
-            <td class="schedule-slot">
-            {{ with .photo }}
-              <span class="speaker-photo">
-                <img class="photo" src="{{ . }}" alt="{{ $slot.name }}">
-              </span>
-            {{ end }}
+<style>
+  table {
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-size:125%
+  }
+  tr:nth-child(even) {
+    background-color: #eee;
+  }
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }            
+</style>
 
-              {{ .presentation.title }}
-              <span class="speakers-company">{{ .company }}</span>
-            </td>
-            <td class="schedule-description">{{ .presentation.description }}</td>
-          </tr>
-        {{ else }}
-          <tr class="schedule-other">
-            <td class="schedule-time">{{ .time }}</td>
-            <td class="schedule-slot">{{ .name }}</td>
-            <td class="schedule-description">-</td>
-          </tr>
-        {{ end }}
-      {{ end }}
-    </tbody>
-  </table>
+<br>
+
+<h3>Friday</h3>
+<div>
+<table> 
+<thead>
+<th align="left">Time</th>
+<th align="left">Speaker</th>
+<th align="left">Affiliation</th>
+<th align="left">Title</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">7:00 - 8:00</td>
+<td align="left">Breakfast</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">8:00 - 10:00</td>
+<td align="left">Mine Cetinkaya-Rundel</td>
+<td align="left">RStudio</td>
+<td align="left">Shiny Tutorial</td>
+</tr>
+<tr class="odd">
+<td align="left">10:00 - 10:30</td>
+<td align="left">Break</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">10:30 - 10:40</td>
+<td align="left">Michael Kane</td>
+<td align="left">Yale University</td>
+<td align="left">Opening Remarks</td>
+</tr>
+<tr class="odd">
+<td align="left">10:40 - 11:20</td>
+<td align="left">Rob Tibshirani</td>
+<td align="left">Stanford University</td>
+<td align="left">TBA</td>
+</tr>
+<tr class="even">
+<td align="left">11:20 - 11:40</td>
+<td align="left">Nathaniel Phillips</td>
+<td align="left">Roche</td>
+<td align="left">FFTrees: How to create extremely simple, transparent, predictive decision algorithms for both machine learning and clinical decision applications.</td>
+</tr>
+<tr class="odd">
+<td align="left">11:40 - 12:00</td>
+<td align="left">Peter Higgins</td>
+<td align="left">University of Michigan</td>
+<td align="left">Developing Random Forest Models for Medication Response and Implementation in the Epic EMR</td>
+</tr>
+<tr class="even">
+<td align="left">12:00 - 1:00</td>
+<td align="left">Lunch</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">1:00 - 1:20</td>
+<td align="left">Max Kuhn</td>
+<td align="left">RStudio</td>
+<td align="left">tidymodels: a collection of opinionated modeling packages</td>
+</tr>
+<tr class="even">
+<td align="left">1:20 - 1:40</td>
+<td align="left">Remi Besson</td>
+<td align="left">Ecole Polytechnique</td>
+<td align="left">Optimization of a Sequential Decision Making Problem for a Disease Diagnostic Application.</td>
+</tr>
+<tr class="odd">
+<td align="left">1:40 - 2:00</td>
+<td align="left">Xinyue Li</td>
+<td align="left">Yale University</td>
+<td align="left">Visualizing and Analyzing Circadian Rythms of Infants via Activity Data</td>
+</tr>
+<tr class="even">
+<td align="left">2:00 - 2:20</td>
+<td align="left">Steven Schwager</td>
+<td align="left">Medidata Solutions</td>
+<td align="left">TBA</td>
+</tr>
+<tr class="odd">
+<td align="left">2:20 - 2:30</td>
+<td align="left">Joseph Chou</td>
+<td align="left">Harvard University</td>
+<td align="left">Machine learning analysis of maternal pregnancy clinical notes to predict newborns at risk for neonatal abstinence syndrome</td>
+</tr>
+<tr class="even">
+<td align="left">2:30 - 3:00</td>
+<td align="left">Break</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">3:00 - 3:40</td>
+<td align="left">TBA</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">3:40 - 4:00</td>
+<td align="left">Eran Bellin</td>
+<td align="left">Montefiore</td>
+<td align="left">How to Ask and Answer your Research Question using Electronic Data System data</td>
+</tr>
+<tr class="odd">
+<td align="left">4:00 - 4:10</td>
+<td align="left">Peter Higgins</td>
+<td align="left">University of Michigan</td>
+<td align="left">From REDCap data to NIH Enrollment Tables</td>
+</tr>
+<tr class="even">
+<td align="left">4:10 - 4:20</td>
+<td align="left">Ahmad Mobin</td>
+<td align="left">CAMH</td>
+<td align="left">Trauma-Informed De-escalation Education for Safety- Using R to help improve saftey and care within a Hospital Setting</td>
+</tr>
+<tr class="odd">
+<td align="left">4:20 - 4:30</td>
+<td align="left">Stephan Kadauke</td>
+<td align="left">University of Pennsylvania</td>
+<td align="left">Teaching Reproducible Clinical Data Analysis to Medical Doctors</td>
+</tr>
+<tr class="even">
+<td align="left">5:00 - 6:30</td>
+<td align="left">Reception</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
 </div>
+
 <br>
-<br>
-<font size="3">Mark your calendars for our meeting!!</font> <br><br>
-<iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=r.medicine2018%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+<h3>Saturday</h3>
+<table>
+<thead>
+<th align="left">Time</th>
+<th align="left">Speaker</th>
+<th align="left">Affiliation</th>
+<th align="left">Title</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">7:00 - 8:00</td>
+<td align="left">Breakfast</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">8:00 - 10:00</td>
+<td align="left">Tutorial</td>
+<td align="left">Stan</td>
+<td align="left">Stan Tutorial</td>
+</tr>
+<tr class="even">
+<td align="left">10:00 - 10:30</td>
+<td align="left">Break</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">10:30 - 11:10</td>
+<td align="left">Michael Lawrence</td>
+<td align="left">Genentech</td>
+<td align="left">TBA</td>
+</tr>
+<tr class="even">
+<td align="left">11:10 - 11:30</td>
+<td align="left">Beth Atkinson</td>
+<td align="left">Mayo Clinic</td>
+<td align="left">TBA</td>
+</tr>
+<tr class="odd">
+<td align="left">11:30 - 11:50</td>
+<td align="left">Chinonyerem Madu</td>
+<td align="left">Children’s Hospital of Philadelphia</td>
+<td align="left">Using R to Automate the Investigation of Pediatric Health Disparities</td>
+</tr>
+<tr class="even">
+<td align="left">11:50 - 12:00</td>
+<td align="left">Madeleine Gastonguay</td>
+<td align="left">Metrum Research Group</td>
+<td align="left">Development of an Open and General PBPK Model to Predict Maternal-Fetal Exposures for Drugs Metabolized by CYP Isoenzymes</td>
+</tr>
+<tr class="odd">
+<td align="left">12:00 - 1:00</td>
+<td align="left">Lunch</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">1:00 - 1:20</td>
+<td align="left">Jennifer Thompson</td>
+<td align="left">Vanderbilt University</td>
+<td align="left">The Life of a Reproducible Project in R</td>
+</tr>
+<tr class="odd">
+<td align="left">1:20 - 1:40</td>
+<td align="left">Denise Esserman</td>
+<td align="left">Yale University</td>
+<td align="left">Reproducible Clinical Trial Design for Patient Centered Outcomes Research (PCORI)</td>
+</tr>
+<tr class="even">
+<td align="left">1:40 - 2:00</td>
+<td align="left">Keaven Anderson</td>
+<td align="left">Merck</td>
+<td align="left">Traceable and reproducible use of R for Analysis and Reporting under regulated environment</td>
+</tr>
+<tr class="odd">
+<td align="left">2:00 - 2:20</td>
+<td align="left">Elizabeth Claus</td>
+<td align="left">Yale University</td>
+<td align="left">Obstacles to Open Science: A Case Study with the Low-Grade Glioma Registry</td>
+</tr>
+<tr class="even">
+<td align="left">2:20 - 3:00</td>
+<td align="left">Break</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">3:00 - 3:40</td>
+<td align="left">Victoria Stodden</td>
+<td align="left">University of Illinois at Urbana-Champaign</td>
+<td align="left">TBA</td>
+</tr>
+<tr class="even">
+<td align="left">3:40 - 4:00</td>
+<td align="left">Raymond Balise</td>
+<td align="left">The University of Miami</td>
+<td align="left">A Web App to Visualize Cancer Risk Factors for 900+ Neighborhoods in Florida - ShinyNeighborhood</td>
+</tr>
+<tr class="even">
+<td align="left">4:00 - 4:20</td>
+<td align="left">Roundtable Discussion</td>
+<td align="left"></td>
+<td align="left">Integrating R in Hospitals: From Workstation to Bedside
+</tr>
+<tr class="even">
+<td align="left">4:30 - </td>
+<td align="left">Drinks offsite</td>
+<td align="left"></td>
+<td align="left">
+</tr>
+</tbody>
+</table>
+
+

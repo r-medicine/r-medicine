@@ -25,7 +25,7 @@ params:
     - keynotes
     - location
     - lodging
-#    - schedule
+    - schedule
     - sponsors
     - committee
     - contact
@@ -36,7 +36,7 @@ params:
     keynotes: "Keynotes"
     lodging: "Lodging"
     location: "Location"
-#    schedule: "Schedule"
+    schedule: "Program"
     sponsors: "Sponsors"
     committee: "Committee"
     contact: "Contact"

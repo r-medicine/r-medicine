@@ -72,6 +72,12 @@
       </li>
     
       <li class="nav-item">
+        <a href="#schedule" target="_blank" title="Schedule" class="nav-link">
+          Schedule
+        </a>
+      </li>
+    
+      <li class="nav-item">
         <a href="#sponsors" target="_blank" title="Sponsors" class="nav-link">
           Sponsors
         </a>
@@ -107,7 +113,7 @@
       
 
       
-        <a href="http://www.cvent.com/d/1gq0qx" class="call-action-link" target="_blank" title="Click Here to Register!">Click Here to Register!<br> <br> Students: $250 <br> Academic $480 <br> Industry $650 </a>
+        <a href="http://www.cvent.com/d/1gq0qx" class="call-action-link" target="_blank" title="Click Here to Register">Click Here to Register<br> <br> Students: $250 <br> Academic: $480 <br> Industry: $650 </a>
       
 
     </div>
@@ -196,6 +202,275 @@ For lodging, click the following link to the <a href="https://www.omnihotels.com
 </p>
 </body>
 </html>
+
+          </section>
+        
+          <section class="schedule" id="schedule">
+            <h2 class="section-title">Schedule</h2>
+
+
+<div id="friday" class="section level2">
+<h2>Friday</h2>
+<pre class="r"><code>fri &lt;- read_csv(&quot;Friday.csv&quot;)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   Time = col_character(),
+##   `Talk Type` = col_character(),
+##   Speaker = col_character(),
+##   Affiliation = col_character(),
+##   Title = col_character()
+## )</code></pre>
+<pre class="r"><code>for (j in 1:ncol(fri)) {
+  fri[is.na(fri[,j]),j] &lt;- &quot;&quot;
+}
+kable(fri[,-2])</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Time</th>
+<th align="left">Speaker</th>
+<th align="left">Affiliation</th>
+<th align="left">Title</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">7:00 - 8:00</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">8:00 - 10:00</td>
+<td align="left">Mine Cetinkaya-Rundel</td>
+<td align="left">RStudio</td>
+<td align="left">Shiny Tutorial</td>
+</tr>
+<tr class="odd">
+<td align="left">10:00 - 10:30</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">10:30 - 10:40</td>
+<td align="left">Michael Kane</td>
+<td align="left">Yale University</td>
+<td align="left">Opening Remarks</td>
+</tr>
+<tr class="odd">
+<td align="left">10:40 - 11:20</td>
+<td align="left">Rob Tibshirani</td>
+<td align="left">Stanford University</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">11:20 - 11:40</td>
+<td align="left">Nathaniel Phillips</td>
+<td align="left">Roche</td>
+<td align="left">FFTrees: How to create extremely simple, transparent, predictive decision algorithms for both machine learning and clinical decision applications.</td>
+</tr>
+<tr class="odd">
+<td align="left">11:40 - 12:00</td>
+<td align="left">Peter Higgins</td>
+<td align="left">University of Michigan</td>
+<td align="left">Developing Random Forest Models for Medication Response and Implementation in the Epic EMR</td>
+</tr>
+<tr class="even">
+<td align="left">12:00 - 1:00</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">1:00 - 1:20</td>
+<td align="left">Max Kuhn</td>
+<td align="left">RStudio</td>
+<td align="left">tidymodels: a collection of opinionated modeling packages</td>
+</tr>
+<tr class="even">
+<td align="left">1:20 - 1:40</td>
+<td align="left">Remi Besson</td>
+<td align="left">Polytechnique</td>
+<td align="left">Optimization of a Sequential Decision Making Problem for a Disease Diagnostic Application.</td>
+</tr>
+<tr class="odd">
+<td align="left">1:40 - 2:00</td>
+<td align="left">Xinyue Li</td>
+<td align="left">Yale University</td>
+<td align="left">Visualizing and Analyzing Circadian Rythms of Infants via Activity Data</td>
+</tr>
+<tr class="even">
+<td align="left">2:00 - 2:20</td>
+<td align="left">Steven Schwager</td>
+<td align="left">Medidata</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">2:20 - 2:30</td>
+<td align="left">Joseph Chou</td>
+<td align="left">Harvard</td>
+<td align="left">Machine learning analysis of maternal pregnancy clinical notes to predict newborns at risk for neonatal abstinence syndrome</td>
+</tr>
+<tr class="even">
+<td align="left">2:30 - 3:00</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">3:00 - 3:40</td>
+<td align="left">Harlan Krumholz</td>
+<td align="left">Yale University</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">3:40 - 4:00</td>
+<td align="left">Eran Bellin</td>
+<td align="left">Montefiore</td>
+<td align="left">How to Ask and Answer your Research Question using Electronic Data System data</td>
+</tr>
+<tr class="odd">
+<td align="left">4:00 - 4:10</td>
+<td align="left">Peter Higgins</td>
+<td align="left">University of Michigan</td>
+<td align="left">From REDCap data to NIH Enrollment Tables</td>
+</tr>
+<tr class="even">
+<td align="left">4:10 - 4:20</td>
+<td align="left">Ahmad Mobin</td>
+<td align="left">CAMH</td>
+<td align="left">Trauma-Informed De-escalation Education for Safety- Using R to help improve saftey and care within a Hospital Setting</td>
+</tr>
+<tr class="odd">
+<td align="left">4:20 - 4:30</td>
+<td align="left">Stephan Kadauke</td>
+<td align="left">University of Pennsylvania</td>
+<td align="left">Teaching Reproducible Clinical Data Analysis to Medical Doctors</td>
+</tr>
+<tr class="even">
+<td align="left">5:00 - 6:30</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="saturday" class="section level2">
+<h2>Saturday</h2>
+<pre class="r"><code>sat &lt;- read_csv(&quot;Saturday.csv&quot;)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   Time = col_character(),
+##   `Talk Type` = col_character(),
+##   Speaker = col_character(),
+##   Affiliation = col_character(),
+##   Title = col_character()
+## )</code></pre>
+<pre class="r"><code>for (j in 1:ncol(sat)) {
+  sat[is.na(sat[,j]),j] &lt;- &quot;&quot;
+}
+kable(sat[,-2])</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Time</th>
+<th align="left">Speaker</th>
+<th align="left">Affiliation</th>
+<th align="left">Title</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">8:00 - 10:00</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">10:00 - 10:30</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">10:30 - 11:10</td>
+<td align="left">Michael Lawrence</td>
+<td align="left">Genentech</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">11:10 - 11:30</td>
+<td align="left">Beth Atkinson</td>
+<td align="left">Mayo Clinic</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">11:30 - 11:50</td>
+<td align="left">Chinonyerem Madu</td>
+<td align="left">Children’s Hospital of Philadelphia</td>
+<td align="left">Using R to Automate the Investigation of Pediatric Health Disparities</td>
+</tr>
+<tr class="even">
+<td align="left">11:50 - 12:00</td>
+<td align="left">Madeleine Gastonguay</td>
+<td align="left">Metrum Research Group</td>
+<td align="left">Development of an Open and General PBPK Model to Predict Maternal-Fetal Exposures for Drugs Metabolized by CYP Isoenzymes</td>
+</tr>
+<tr class="odd">
+<td align="left">12:00 - 1:00</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">1:00 - 1:20</td>
+<td align="left">Jennifer Thompson</td>
+<td align="left">Vanderbilt University</td>
+<td align="left">The Life of a Reproducible Project in R</td>
+</tr>
+<tr class="odd">
+<td align="left">1:20 - 1:40</td>
+<td align="left">Denise Esserman</td>
+<td align="left">Yale University</td>
+<td align="left">Reproducible Clinical Trial Design for Patient Centered Outcomes Research (PCORI)</td>
+</tr>
+<tr class="even">
+<td align="left">1:40 - 2:00</td>
+<td align="left">Keaven Anderson</td>
+<td align="left">Merck</td>
+<td align="left">Traceable and reproducible use of R for Analysis and Reporting under regulated environment</td>
+</tr>
+<tr class="odd">
+<td align="left">2:00 - 2:20</td>
+<td align="left">Elizabeth Claus</td>
+<td align="left">Yale University</td>
+<td align="left">Obstacles to Open Science: A Case Study with the Low-Grade Glioma Registry</td>
+</tr>
+<tr class="even">
+<td align="left">2:20 - 3:00</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">3:00 - 3:40</td>
+<td align="left">Victoria Stodden</td>
+<td align="left">University of Illinois at Urbana-Champaign</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">3:40 - 4:00</td>
+<td align="left">Raymond Balise</td>
+<td align="left">The University of Miami</td>
+<td align="left">A Web App to Visualize Cancer Risk Factors for 900+ Neighborhoods in Florida - ShinyNeighborhood</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
 
           </section>
         
