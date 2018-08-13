@@ -72,8 +72,8 @@
       </li>
     
       <li class="nav-item">
-        <a href="#schedule" target="_blank" title="Schedule" class="nav-link">
-          Schedule
+        <a href="#schedule" target="_blank" title="Program" class="nav-link">
+          Program
         </a>
       </li>
     
@@ -206,27 +206,33 @@ For lodging, click the following link to the <a href="https://www.omnihotels.com
           </section>
         
           <section class="schedule" id="schedule">
-            <h2 class="section-title">Schedule</h2>
+            
+<h2 class="section-title">Program</h2>
 
+<style>
+  table {
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-size:125%
+  }
+  tr:nth-child(even) {
+    background-color: #eee;
+  }
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }            
+</style>
 
-<div id="friday" class="section level2">
-<h2>Friday</h2>
-<pre class="r"><code>fri &lt;- read_csv(&quot;Friday.csv&quot;)</code></pre>
-<pre><code>## Parsed with column specification:
-## cols(
-##   Time = col_character(),
-##   `Talk Type` = col_character(),
-##   Speaker = col_character(),
-##   Affiliation = col_character(),
-##   Title = col_character()
-## )</code></pre>
-<pre class="r"><code>for (j in 1:ncol(fri)) {
-  fri[is.na(fri[,j]),j] &lt;- &quot;&quot;
-}
-kable(fri[,-2])</code></pre>
-<table>
+<br>
+
+<h3>Friday</h3>
+<div>
+<table> 
 <thead>
-<tr class="header">
 <th align="left">Time</th>
 <th align="left">Speaker</th>
 <th align="left">Affiliation</th>
@@ -236,7 +242,7 @@ kable(fri[,-2])</code></pre>
 <tbody>
 <tr class="odd">
 <td align="left">7:00 - 8:00</td>
-<td align="left"></td>
+<td align="left">Breakfast</td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
@@ -248,7 +254,7 @@ kable(fri[,-2])</code></pre>
 </tr>
 <tr class="odd">
 <td align="left">10:00 - 10:30</td>
-<td align="left"></td>
+<td align="left">Break</td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
@@ -262,7 +268,7 @@ kable(fri[,-2])</code></pre>
 <td align="left">10:40 - 11:20</td>
 <td align="left">Rob Tibshirani</td>
 <td align="left">Stanford University</td>
-<td align="left"></td>
+<td align="left">How many units of platelets will the Stanford Hospital need tomorrow?</td>
 </tr>
 <tr class="even">
 <td align="left">11:20 - 11:40</td>
@@ -278,7 +284,7 @@ kable(fri[,-2])</code></pre>
 </tr>
 <tr class="even">
 <td align="left">12:00 - 1:00</td>
-<td align="left"></td>
+<td align="left">Lunch</td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
@@ -291,7 +297,7 @@ kable(fri[,-2])</code></pre>
 <tr class="even">
 <td align="left">1:20 - 1:40</td>
 <td align="left">Remi Besson</td>
-<td align="left">Polytechnique</td>
+<td align="left">Ecole Polytechnique</td>
 <td align="left">Optimization of a Sequential Decision Making Problem for a Disease Diagnostic Application.</td>
 </tr>
 <tr class="odd">
@@ -303,25 +309,25 @@ kable(fri[,-2])</code></pre>
 <tr class="even">
 <td align="left">2:00 - 2:20</td>
 <td align="left">Steven Schwager</td>
-<td align="left">Medidata</td>
-<td align="left"></td>
+<td align="left">Medidata Solutions</td>
+<td align="left">TBA</td>
 </tr>
 <tr class="odd">
 <td align="left">2:20 - 2:30</td>
 <td align="left">Joseph Chou</td>
-<td align="left">Harvard</td>
+<td align="left">Harvard University</td>
 <td align="left">Machine learning analysis of maternal pregnancy clinical notes to predict newborns at risk for neonatal abstinence syndrome</td>
 </tr>
 <tr class="even">
 <td align="left">2:30 - 3:00</td>
-<td align="left"></td>
+<td align="left">Break</td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left">3:00 - 3:40</td>
-<td align="left">Harlan Krumholz</td>
-<td align="left">Yale University</td>
+<td align="left">TBA</td>
+<td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
@@ -350,31 +356,19 @@ kable(fri[,-2])</code></pre>
 </tr>
 <tr class="even">
 <td align="left">5:00 - 6:30</td>
-<td align="left"></td>
+<td align="left">Reception</td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="saturday" class="section level2">
-<h2>Saturday</h2>
-<pre class="r"><code>sat &lt;- read_csv(&quot;Saturday.csv&quot;)</code></pre>
-<pre><code>## Parsed with column specification:
-## cols(
-##   Time = col_character(),
-##   `Talk Type` = col_character(),
-##   Speaker = col_character(),
-##   Affiliation = col_character(),
-##   Title = col_character()
-## )</code></pre>
-<pre class="r"><code>for (j in 1:ncol(sat)) {
-  sat[is.na(sat[,j]),j] &lt;- &quot;&quot;
-}
-kable(sat[,-2])</code></pre>
+
+<br>
+
+<h3>Saturday</h3>
 <table>
 <thead>
-<tr class="header">
 <th align="left">Time</th>
 <th align="left">Speaker</th>
 <th align="left">Affiliation</th>
@@ -383,14 +377,20 @@ kable(sat[,-2])</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">8:00 - 10:00</td>
-<td align="left"></td>
+<td align="left">7:00 - 8:00</td>
+<td align="left">Breakfast</td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
+<tr class="odd">
+<td align="left">8:00 - 10:00</td>
+<td align="left">Tutorial</td>
+<td align="left">Stan</td>
+<td align="left">Stan Tutorial</td>
+</tr>
 <tr class="even">
 <td align="left">10:00 - 10:30</td>
-<td align="left"></td>
+<td align="left">Break</td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
@@ -398,13 +398,13 @@ kable(sat[,-2])</code></pre>
 <td align="left">10:30 - 11:10</td>
 <td align="left">Michael Lawrence</td>
 <td align="left">Genentech</td>
-<td align="left"></td>
+<td align="left">Genomic Data Analysis in the Large with R and Bioconductor</td>
 </tr>
 <tr class="even">
 <td align="left">11:10 - 11:30</td>
-<td align="left">Beth Atkinson</td>
-<td align="left">Mayo Clinic</td>
-<td align="left"></td>
+<td align="left">Chris Kennedy</td>
+<td align="left">U.C. Berkeley</td>
+<td align="left">Varimpact: exploratory variable importance integrating causal inference and machine learning</td>
 </tr>
 <tr class="odd">
 <td align="left">11:30 - 11:50</td>
@@ -420,7 +420,7 @@ kable(sat[,-2])</code></pre>
 </tr>
 <tr class="odd">
 <td align="left">12:00 - 1:00</td>
-<td align="left"></td>
+<td align="left">Lunch</td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
@@ -450,7 +450,7 @@ kable(sat[,-2])</code></pre>
 </tr>
 <tr class="even">
 <td align="left">2:20 - 3:00</td>
-<td align="left"></td>
+<td align="left">Break</td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
@@ -458,7 +458,7 @@ kable(sat[,-2])</code></pre>
 <td align="left">3:00 - 3:40</td>
 <td align="left">Victoria Stodden</td>
 <td align="left">University of Illinois at Urbana-Champaign</td>
-<td align="left"></td>
+<td align="left">TBA</td>
 </tr>
 <tr class="even">
 <td align="left">3:40 - 4:00</td>
@@ -466,9 +466,20 @@ kable(sat[,-2])</code></pre>
 <td align="left">The University of Miami</td>
 <td align="left">A Web App to Visualize Cancer Risk Factors for 900+ Neighborhoods in Florida - ShinyNeighborhood</td>
 </tr>
+<tr class="even">
+<td align="left">4:00 - 4:20</td>
+<td align="left">Roundtable Discussion</td>
+<td align="left"></td>
+<td align="left">Integrating R in Hospitals: From Workstation to Bedside
+</tr>
+<tr class="even">
+<td align="left">4:30 - </td>
+<td align="left">Drinks offsite</td>
+<td align="left"></td>
+<td align="left">
+</tr>
 </tbody>
 </table>
-</div>
 
 
 
