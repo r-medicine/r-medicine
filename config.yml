@@ -9,7 +9,7 @@ params:
   # Conference info
   Name: "R/Medicine 2018"
   Description: "R/Medicine 2018"
-  Date: "September 7-8"
+  Date: "September 7-8 2018"
   #Price: "Only $100" # If your event is free, just comment this line
   Venue: "The Omni Hotel"
   Organizers: "Brought to you by the Yale School of Public Health Biostatistics Department and the R Consortium"
@@ -47,9 +47,9 @@ params:
 #    text: "Submit an Abstract"
 #    link: "https://docs.google.com/forms/d/e/1FAIpQLSeJyzhA3N01Kj6bgdBz6pyjG7ztDR-iO8JFZhwm_Pf8mhYnhQ/viewform"
  
-  CallToAction:
-    text: "Click Here to Register"
-    link: http://www.cvent.com/d/1gq0qx
+#  CallToAction:
+#    text: "Click Here to Register"
+#    link: http://www.cvent.com/d/1gq0qx
  
 
   # Fork me on GitHub, if you don't want this, just remove the forkButton property
